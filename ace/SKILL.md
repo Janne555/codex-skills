@@ -41,7 +41,7 @@ Act as the driver: enforce role boundaries, manage `.ace/` task artifacts, run s
 5. Run `plan-change` using `.ace/research.md`; ensure steps are actionable and testable.
 6. Execute `implement-change` per `.ace/plan.md`; keep changes focused and aligned with style.
 7. Enter Verify role: run tests or validate diffs, identify concrete issues, and stop if fixes are required.
-8. Summarize changes, tests run, and any remaining risks or todos.
+8. Summarize changes, tests run, and any remaining risks or todos. If changes have security impacts, refer to the [security integraion section](#When security review is required)
 
 ## Templates
 Use these templates when creating missing artifacts.
@@ -93,3 +93,25 @@ Provide a concise status update including:
 - Plan summary and key steps
 - Implementation status, tests executed, and next actions
 - Current phase and any updates to `.ace/ACE.md`
+
+## Security integration
+
+### When security review is required
+Run a security review if the task involves any of:
+- auth/authz/session handling
+- untrusted input (HTTP/API/CLI/file/env)
+- file upload/download
+- secrets/keys/tokens
+- PII or sensitive data
+- external integrations or webhooks
+- new or changed public endpoints
+
+### How to run it
+After implementation (and before final verification/Done):
+1) Switch to `ROLE: Security Audit`.
+2) Invoke the `infosec-audit` skill.
+3) Produce `.ace/security_review.md`.
+4) Update `.ace/ACE.md`:
+   - add/complete an acceptance checkbox: "Security audit complete"
+   - copy the top 3 risks (or "no significant issues found") into "Open questions / risks".
+
