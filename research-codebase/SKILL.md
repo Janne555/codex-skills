@@ -25,6 +25,7 @@ Stop when:
 - Relevant issue/ticket text
 - Recent stack traces or logs (if applicable)
 - Initial file or symbol hints (if any)
+- Tests, traces, or telemetry samples (if available)
 - `.ace/TASK.md` when present (user-authored; never edit)
 - `.ace/ACE.md` for canonical constraints and current phase
 
@@ -36,7 +37,8 @@ Artifact location: write all outputs to `.ace/` and only update relevant section
 2. Explain current behavior end-to-end.
 3. Identify plausible change points and risks.
 4. Prepare material for the planning phase.
-5. Update `.ace/ACE.md` with findings summary, open questions, and candidate constraints.
+5. Capture baseline behavioral invariants when runtime evidence exists.
+6. Update `.ace/ACE.md` with findings summary, open questions, and candidate constraints.
 
 ## Steps
 1. Skim the provided files and references.
@@ -44,8 +46,9 @@ Artifact location: write all outputs to `.ace/` and only update relevant section
 3. Infer constraints (performance, scaling, backwards compatibility, security/privacy).
 4. List open questions and missing information to ask humans.
 5. Write any research question depends on external documentation, refer to the [External-docs rule](<SKILL#External-docs rule>)
-6. Write findings to `.ace/research.md` and update `.ace/ACE.md` (phase = Research).
-7. Use the `style-enforcer` skill to extract a style contract for the planner to use.
+6. If tests/traces/logs are available, run the `invariant-mining` skill and capture baseline invariants in `.ace/invariants.md`.
+7. Write findings to `.ace/research.md` and update `.ace/ACE.md` (phase = Research).
+8. Use the `style-enforcer` skill to extract a style contract for the planner to use.
 
 ## Output format
 Produce `.ace/research.md` with:
@@ -54,11 +57,11 @@ Produce `.ace/research.md` with:
 3. **Current Behavior**: step-by-step description of current behavior for this case.
 4. **Candidate Change Points**: bullets of files/functions to modify and why.
 5. **Constraints and Risks**: bullets of compat/perf/coupling considerations.
-6. **Open Questions**: questions for the team before implementing.
+6. **Invariants (if mined)**: key invariants with sources and confidence.
+7. **Open Questions**: questions for the team before implementing.
 
 ## External-docs rule
 1) Create or update `.ace/doc_scout_questions.md` with a numbered list of questions.
 2) Each question must include brief context: relevant library/tool name, version (if known), target environment, and what decision the answer will affect.
 3) Update `ACE.md` under "Open questions / risks" noting that doc-scout is required.
 4) STOP. Do not guess; do not proceed to planning until doc-scout answers are available.
-

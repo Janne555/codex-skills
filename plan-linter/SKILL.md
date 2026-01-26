@@ -29,26 +29,31 @@ Evaluate whether `.ace/plan.md` is ready for implementation. Identify missing pi
 1. **Executability**
    - Steps must be specific and sequential.
    - Plan must name the files/components to touch (or mark unknowns explicitly).
+   - If multiple candidate plans are listed, a single plan must be explicitly selected in a Decision section.
 
 2. **Acceptance criteria mapping**
    - Every acceptance criterion checkbox in `.ace/ACE.md` must map to:
      - plan step(s) that implement it
      - verification step(s) that validate it
+   - Mapping must reference the selected plan, not discarded candidates.
 
 3. **Verification**
    - Must include explicit commands/tests or measurable checks.
 
 4. **Ambiguity**
    - Flag vague language ("handle edge cases", "as needed", "make sure") and require concrete definitions.
+   - If an evaluation matrix is present, scores must include brief notes justifying each candidate's score.
 
 5. **Scope control**
    - Flag steps that add new requirements not present in `.ace/TASK.md` or `.ace/ACE.md`.
    - Ensure non-goals are respected.
+   - Candidate plans must not introduce new scope unless explicitly called out as out-of-scope.
 
 ### Warning checks (PASS allowed, but report)
 - Risk handling and mitigations
 - Rollback/migration strategy when relevant
 - Step size / ordering / incrementalism
+- Candidate plans exceed 3
 
 ## Output format: `.ace/plan_lint.md`
 
@@ -56,6 +61,12 @@ Evaluate whether `.ace/plan.md` is ready for implementation. Identify missing pi
 
 ## Verdict
 - PASS | FAIL
+
+## Candidate Plans Check (if present)
+- Count: <number>
+- Decision present: Yes | No
+- Selected plan: <name or identifier>
+- Notes: <any issues with candidate scope, missing evaluation notes, or decision clarity>
 
 ## Blocking issues (must fix)
 1. <issue>
@@ -74,4 +85,3 @@ For each acceptance criterion in `.ace/ACE.md`:
 
 ## Suggested plan edits (optional)
 - <bullet list of exact edits to apply>
-
