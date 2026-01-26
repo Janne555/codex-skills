@@ -43,7 +43,8 @@ Artifact location: write all outputs to `.ace/` and only update relevant section
 2. Identify key modules, entrypoints, data flows, types, interfaces, invariants, and external dependencies.
 3. Infer constraints (performance, scaling, backwards compatibility, security/privacy).
 4. List open questions and missing information to ask humans.
-5. Write findings to `.ace/research.md` and update `.ace/ACE.md` (phase = Research).
+5. Write any research question depends on external documentation, refer to the [External-docs rule](<SKILL#External-docs rule>)
+6. Write findings to `.ace/research.md` and update `.ace/ACE.md` (phase = Research).
 
 ## Output format
 Produce `.ace/research.md` with:
@@ -53,3 +54,10 @@ Produce `.ace/research.md` with:
 4. **Candidate Change Points**: bullets of files/functions to modify and why.
 5. **Constraints and Risks**: bullets of compat/perf/coupling considerations.
 6. **Open Questions**: questions for the team before implementing.
+
+## External-docs rule
+1) Create or update `.ace/doc_scout_questions.md` with a numbered list of questions.
+2) Each question must include brief context: relevant library/tool name, version (if known), target environment, and what decision the answer will affect.
+3) Update `ACE.md` under "Open questions / risks" noting that doc-scout is required.
+4) STOP. Do not guess; do not proceed to planning until doc-scout answers are available.
+
