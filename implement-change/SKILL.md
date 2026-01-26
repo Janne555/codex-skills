@@ -32,7 +32,7 @@ Artifact location: write all outputs to `.ace/` and only update relevant section
 
 ## Objectives
 1. Apply the planned change with minimal, coherent edits.
-2. Match existing style and patterns.
+2. Match existing style and patterns. Use the `.ace/style_contract.md` as guide if available.
 3. Keep the diff focused and reviewable.
 4. Update/add tests to cover new behavior.
 5. Progress through all steps unless told to stop.

@@ -41,7 +41,10 @@ Act as the driver: enforce role boundaries, manage `.ace/` task artifacts, run s
 5. Run `plan-change` using `.ace/research.md`; ensure steps are actionable and testable.
 6. Execute `implement-change` per `.ace/plan.md`; keep changes focused and aligned with style.
 7. Enter Verify role: run tests or validate diffs, identify concrete issues, and stop if fixes are required.
-8. Summarize changes, tests run, and any remaining risks or todos. If changes have security impacts, refer to the [security integraion section](#When security review is required)
+8. Summarize changes, tests run, and any remaining risks or todos. If changes have security impacts, refer to the [security integraion section](#When security review is required).
+9. Run the `style-enforcer` skill to evaluate the changes.
+10. Run the `refactor-smells` skill to evaluate the quality of the changes.
+11. If the task produce changes to UI run the `a11y-review` skill to verify accessibility.
 
 ## Templates
 Use these templates when creating missing artifacts.

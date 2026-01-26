@@ -45,6 +45,7 @@ Artifact location: write all outputs to `.ace/` and only update relevant section
 4. List open questions and missing information to ask humans.
 5. Write any research question depends on external documentation, refer to the [External-docs rule](<SKILL#External-docs rule>)
 6. Write findings to `.ace/research.md` and update `.ace/ACE.md` (phase = Research).
+7. Use the `style-enforcer` skill to extract a style contract for the planner to use.
 
 ## Output format
 Produce `.ace/research.md` with:
