@@ -6,19 +6,19 @@
 
 ## Problem / Opportunity
 
-## Goals (must be measurable)
+## Goals (desired outcomes)
 
 ## Non-goals
 
 ## Users / Personas
 
-## Current behavior
+## Current behavior (optional)
 
-## Proposed solution
+## Target system behavior
 
-### UX / Interaction notes
+### UX / Interaction principles
 
-### Data / API changes
+### External interfaces / contracts
 
 ### Security / Privacy / Compliance
 
@@ -26,7 +26,7 @@
 
 ### Performance / Reliability
 
-## Alternatives considered
+## Alternatives considered (rejected + rationale)
 
 ## Dependencies
 
@@ -34,13 +34,9 @@
 
 ## Open questions
 
-## Success metrics
+## Constraints / Requirements
 
-## Rollout / Launch plan
-
-## Analytics / Instrumentation
-
-## Acceptance criteria
+## Assumptions
 
 ## Change log
 

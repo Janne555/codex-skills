@@ -1,29 +1,29 @@
 ---
 name: feature-specs
-description: Create or update durable feature specifications/PRDs and lightweight design docs that live in a repo’s docs/specs folder, maintaining a docs/specs/_index.md index. Use when asked to design a new feature, write a PRD/spec, edit an existing spec, or produce consistent feature documentation that should be kept as a long‑lived artifact.
+description: Create or update durable feature specifications that describe the desired system state (not implementation tasks), stored in a repo’s docs/specs folder with a maintained docs/specs/_index.md. Use when asked to define or revise what a system should be like.
 ---
 
 # Feature Specs
 
 ## Overview
 
-Create or update permanent feature specs/PRDs and lightweight design docs stored in `docs/specs/`, with a consistent structure and a maintained `docs/specs/_index.md`. When editing, replace the spec body with the new version and append a change-log entry explaining what changed and why.
+Create or update durable feature specs stored in `docs/specs/`, with a consistent structure and a maintained `docs/specs/_index.md`. The spec describes the desired system state and behavior, not the work needed to align the system to it. When editing, replace the spec body with the new version and append a change-log entry explaining what changed and why.
 
 ## Feature definition (soft)
 
-Treat a “feature” as any product change that benefits from a durable spec and measurable outcomes (UI/UX changes, backend capabilities, policy or workflow changes). This is guidance, not a gate.
+Treat a “feature” as any product change that benefits from a durable description of the desired system state (UI/UX changes, backend capabilities, policy or workflow changes). This is guidance, not a gate.
 
 ## Workflow
 
-### 0) Interrogate the problem before committing
+### 0) Clarify the desired system before committing
 
-Be politely skeptical. Ask clarifying questions that pressure-test the idea, align on outcomes, and reduce scope risk. Do this before drafting or updating the spec. Aim for 3–6 targeted questions, focusing on:
+Be politely skeptical. Ask clarifying questions that pressure-test the idea, align on the target system state, and reduce scope risk. Do this before drafting or updating the spec. Aim for 3–6 targeted questions, focusing on:
 
 - The real problem and why it matters now
-- Who it affects and how success is measured
-- Constraints, risks, and what could go wrong
+- Who it affects and what the system should enable for them
+- Key behaviors, constraints, and what “good” looks like
 - What can be excluded or deferred
-- Evidence or assumptions that must be tested
+- Assumptions and unknowns that should be tracked
 
 If the user’s request is urgent, still ask at least 2 questions and proceed with reasonable assumptions, clearly marking them in the spec.
 
@@ -44,12 +44,12 @@ If the user’s request is urgent, still ask at least 2 questions and proceed wi
 Load `references/spec-template.md` and fill every section that applies. Keep it concise but complete. Prioritize:
 
 - Problem/opportunity clarity
-- Goals vs non-goals
-- Proposed solution and UX notes
+- Goals vs non-goals (desired outcomes, not test criteria)
+- Target system behavior and user experience
 - NFRs (security, privacy, accessibility, performance)
 - Risks, dependencies, alternatives, and open questions
-- Success metrics + rollout plan
-- Acceptance criteria that are testable
+
+Do not include implementation tasks, rollout plans, or acceptance criteria. If the user requests alignment or verification, direct that to a task definition.
 
 ### 4) Update the index
 
