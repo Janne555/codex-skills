@@ -10,6 +10,10 @@
 
 ## Non-goals
 
+## Functional requirements
+
+## Non-functional requirements (quality attributes)
+
 ## Users / Personas
 
 ## System behavior
@@ -31,10 +35,6 @@
 ## Risks & mitigations
 
 ## Open questions
-
-## Functional requirements
-
-## Non-functional requirements (quality attributes)
 
 ## Constraints
 
