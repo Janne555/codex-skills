@@ -16,8 +16,7 @@
 
 ## Users / Personas
 
-## User stories / scenarios (optional)
-
+## User stories 
 | As a <user> | I want to <action> | so that I can <benefit> |
 | --- | --- | --- |
 |  |  |  |
