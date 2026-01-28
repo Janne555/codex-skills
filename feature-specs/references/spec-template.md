@@ -12,9 +12,7 @@
 
 ## Users / Personas
 
-## Current behavior (optional)
-
-## Target system behavior
+## System behavior
 
 ### UX / Interaction principles
 
@@ -34,7 +32,11 @@
 
 ## Open questions
 
-## Constraints / Requirements
+## Functional requirements
+
+## Non-functional requirements (quality attributes)
+
+## Constraints
 
 ## Assumptions
 
