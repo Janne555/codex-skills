@@ -18,6 +18,10 @@
 
 ## User stories / scenarios (optional)
 
+| As a <user> | I want to <action> | so that I can <benefit> |
+| --- | --- | --- |
+|  |  |  |
+
 ## System behavior
 
 ### UX / Interaction principles
