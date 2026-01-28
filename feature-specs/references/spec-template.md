@@ -16,6 +16,8 @@
 
 ## Users / Personas
 
+## User stories / scenarios (optional)
+
 ## System behavior
 
 ### UX / Interaction principles

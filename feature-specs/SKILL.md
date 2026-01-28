@@ -51,6 +51,9 @@ Load `references/spec-template.md` and fill every section that applies. Keep it 
 
 Do not include implementation tasks, rollout plans, or acceptance criteria. If the user requests alignment or verification, direct that to a task definition.
 
+Functional requirements describe what the system must do (capabilities/behaviors). Non-functional requirements (quality attributes) describe how well it must do it or constraints on those behaviors (performance, reliability, security, privacy, accessibility, etc.).
+Include user stories/scenarios when they help capture expected behavior from the user’s point of view; omit them for purely internal capabilities.
+
 ### 4) Update the index
 
 Load `references/index-template.md`. Add or update the row for the feature with:
