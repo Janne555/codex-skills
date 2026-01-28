@@ -1,3 +1,7 @@
+---
+implemented_version: YYYY-MM-DD
+---
+
 # Feature Spec Template (docs/specs/<feature-name>.md)
 
 ## Title

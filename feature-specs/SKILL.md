@@ -53,6 +53,7 @@ Do not include implementation tasks, rollout plans, or acceptance criteria. If t
 
 Functional requirements describe what the system must do (capabilities/behaviors). Non-functional requirements (quality attributes) describe how well it must do it or constraints on those behaviors (performance, reliability, security, privacy, accessibility, etc.).
 Include user stories/scenarios when they help capture expected behavior from the user’s point of view; omit them for purely internal capabilities.
+Frontmatter `implemented_version` should reflect the latest spec revision date that is actually implemented in the system. If not yet implemented, leave it as `YYYY-MM-DD` or set to `N/A`.
 
 ### 4) Update the index
 
