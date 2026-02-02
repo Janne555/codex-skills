@@ -17,6 +17,7 @@ Act as the driver: enforce role boundaries, manage `.ace/` task artifacts, run s
 - Enforce precedence when documents conflict: `ACE.md` > `TASK.md` > `plan.md` > `research.md`.
 - Compaction or session restarts should happen only at phase boundaries.
 - Artifact location: write all outputs to `.ace/` and only update relevant sections in `.ace/ACE.md`.
+- You may draft questions for `doc-scout`, but do not invoke it or perform external documentation research; ask a separate agent to run `doc-scout` and return the answers.
 
 ## Inputs
 - User problem/feature request and constraints
@@ -117,4 +118,3 @@ After implementation (and before final verification/Done):
 4) Update `.ace/ACE.md`:
    - add/complete an acceptance checkbox: "Security audit complete"
    - copy the top 3 risks (or "no significant issues found") into "Open questions / risks".
-
