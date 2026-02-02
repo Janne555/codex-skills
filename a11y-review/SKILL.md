@@ -8,6 +8,8 @@ description: Review UI changes for accessibility issues using WCAG-oriented heur
 ## Purpose
 Evaluate UI changes for accessibility risks and violations, focusing on real user impact and practical fixes.
 
+**Delegation note:** This is a good candidate for delegation via the `prometheus` skill when you want to avoid context pollution or use a separate agent for review.
+
 ## When to use
 - Any UI/UX change
 - Forms, navigation, dialogs, dynamic content
@@ -58,4 +60,3 @@ Evaluate UI changes for accessibility risks and violations, focusing on real use
 ## Notes
 - Assumptions made
 - Areas not covered
-

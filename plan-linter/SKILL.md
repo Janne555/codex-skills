@@ -10,6 +10,8 @@ Evaluate whether `.ace/plan.md` is ready for implementation. Identify missing pi
 
 If the plan is intended for **Codex Web execution**, apply additional readiness constraints to ensure safe, deterministic delegation.
 
+**Delegation note:** This is a good candidate for delegation via the `prometheus` skill when you want to keep the main context clean or need a separate agent to run the linter.
+
 ---
 
 ## Inputs (read)
@@ -161,4 +163,3 @@ For each acceptance criterion in `.ace/ACE.md`:
 
 ## Suggested plan edits (optional)
 - <bullet list of exact edits to apply>
-

@@ -8,6 +8,8 @@ description: Mine likely program invariants from static analysis and/or runtime 
 ## Purpose
 Infer likely invariants (preconditions, postconditions, state relationships, range constraints) from static analysis and/or runtime evidence to document behavioral constraints and detect unexpected shifts.
 
+**Delegation note:** This is a good candidate for delegation via the `prometheus` skill when you want to avoid context pollution or use a separate agent for analysis.
+
 ## Inputs (read)
 - Source code (static analysis)
 - Tests and test outputs

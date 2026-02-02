@@ -8,6 +8,8 @@ description: Identify code smells and propose targeted, behavior-preserving refa
 ## Purpose
 Identify maintainability risks (code smells) and propose small, safe refactors that improve structure without changing behavior.
 
+**Delegation note:** This is a good candidate for delegation via the `prometheus` skill when you want to avoid context pollution or use a separate agent for review.
+
 ## Inputs (read)
 - `.ace/ACE.md`
 - Source code or `git diff`
@@ -55,4 +57,3 @@ For each smell:
 - Recommended now:
 - Defer:
 - Do not touch (justify):
-

@@ -21,6 +21,7 @@ Skills define when to use them, required inputs/outputs, and the expected workfl
 - invariant-mining — Identify program invariants from static/runtime evidence.
 - plan-change — Turn researched problems into a concrete implementation plan.
 - plan-linter — Lint `.ace/plan.md` for readiness and alignment with `.ace/ACE.md`.
+- prometheus — Delegate skill use to a separate agent/context to avoid context pollution.
 - refactor-smells — Identify code smells and propose safe refactors.
 - research-codebase — Map current behavior and risks before planning.
 - spec-linter — Lint feature specs for completeness, focus, and index alignment.

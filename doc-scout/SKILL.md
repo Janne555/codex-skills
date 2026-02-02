@@ -9,6 +9,8 @@ compatibility: Requires access to the internet (via the host agent/CLI) to read 
 ## Purpose
 Given a list of questions, find **current, source-backed** answers by reading external documentation and other authoritative resources, then return a **compact answer pack** suitable for ingestion by another Codex session without blowing up context.
 
+**Delegation note:** This is a good candidate for delegation via the `prometheus` skill when you want to avoid context pollution or when the current workflow forbids using `doc-scout` directly.
+
 ## Inputs
 - `.ace/doc_scout_questions.md` (required): a Markdown file containing questions to answer.
   - If the file does not exist, ask the user to provide it or paste its contents.
@@ -65,4 +67,3 @@ For each question, produce:
   - Note the disagreement in **Notes** and include both sources if necessary.
 - If the question is underspecified:
   - Provide the minimal safe answer and list what missing parameter(s) would change the answer.
-

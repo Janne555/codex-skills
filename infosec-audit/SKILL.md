@@ -8,6 +8,8 @@ description: Perform adversarial security analysis of designs or implementations
 ## Purpose
 Analyze a system, feature, or codebase from an attacker’s perspective to identify realistic security risks, abuse cases, and vulnerability classes.
 
+**Delegation note:** This is a good candidate for delegation via the `prometheus` skill when you want to avoid context pollution or use a separate agent for security review.
+
 ## When to use
 - After planning, before implementation (threat modeling)
 - After implementation, before merge/release
@@ -74,4 +76,3 @@ Produce a list of findings, each with:
 ## Stop condition
 - All major attack surfaces have been reviewed
 - Findings are enumerated or “no significant issues found” is stated
-

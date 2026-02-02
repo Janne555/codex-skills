@@ -8,6 +8,8 @@ description: Lint a feature spec in docs/specs for completeness, consistency wit
 ## Purpose
 Evaluate whether a feature spec describes the desired system state clearly and completely. Identify missing sections, ambiguity, scope drift into implementation tasks, and index mismatches.
 
+**Delegation note:** This is a good candidate for delegation via the `prometheus` skill when you want to avoid context pollution or use a separate agent for linting.
+
 ---
 
 ## Inputs (read)

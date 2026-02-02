@@ -8,6 +8,8 @@ description: Enforce repository-specific coding style and conventions. Detects e
 ## Purpose
 Ensure consistent coding style and conventions within the repository by inferring existing patterns and enforcing them on new or modified code.
 
+**Delegation note:** This is a good candidate for delegation via the `prometheus` skill when you want to avoid context pollution or use a separate agent for linting.
+
 ## Inputs (read)
 - `.ace/ACE.md`
 - Repository source code
@@ -56,4 +58,3 @@ Keep this concise and repo-specific.
 
 ## Notes
 - Any ambiguity or mixed conventions detected
-
