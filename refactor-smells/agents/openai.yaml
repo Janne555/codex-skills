@@ -1,0 +1,6 @@
+interface:
+  display_name: "Refactor Smells"
+  short_description: "Identify safe refactors and code smells"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $refactor-smells to assess refactor opportunities."

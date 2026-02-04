@@ -1,0 +1,6 @@
+interface:
+  display_name: "Research Codebase"
+  short_description: "Map current behavior and risks"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $research-codebase to research current behavior."

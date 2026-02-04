@@ -1,0 +1,6 @@
+interface:
+  display_name: "Plan Linter"
+  short_description: "Check plans for clarity and alignment"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $plan-linter to lint .ace/plan.md."

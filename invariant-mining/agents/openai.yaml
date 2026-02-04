@@ -1,0 +1,6 @@
+interface:
+  display_name: "Invariant Mining"
+  short_description: "Mine behavioral invariants from evidence"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $invariant-mining to identify program invariants."
