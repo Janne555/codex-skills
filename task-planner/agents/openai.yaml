@@ -1,0 +1,4 @@
+interface:
+  display_name: "Task Planner"
+  short_description: "Turn ideas into clear task definitions"
+  default_prompt: "Use $task-planner to help me define a task."

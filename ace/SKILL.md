@@ -80,16 +80,7 @@ Research
 ```
 
 ### `.ace/TASK.md` template (user-authored)
-```
-# Task
-<short description>
-
-## Constraints
-- <constraint>
-
-## Acceptance criteria
-- [ ] <criterion>
-```
+See the `task-planner` skill for the template and task-design workflow.
 
 ## Output format
 Provide a concise status update including:

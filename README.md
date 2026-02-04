@@ -26,6 +26,7 @@ Skills define when to use them, required inputs/outputs, and the expected workfl
 - research-codebase — Map current behavior and risks before planning.
 - spec-linter — Lint feature specs for completeness, focus, and index alignment.
 - style-enforcer — Enforce repository coding style and conventions.
+- task-planner — Help design or refine a task definition (e.g., `.ace/TASK.md`).
 
 ## Notes
 - Skills are designed to be durable guidance. If a skill’s intent changes, update its `SKILL.md` and any referenced templates.
