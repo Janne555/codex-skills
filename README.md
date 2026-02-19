@@ -1,16 +1,5 @@
 # Skills README
 
-This repository contains Codex skills. Most skills are focused playbooks stored in `/<skill-name>/SKILL.md`.
-System-provided skills are stored under `/.system/<skill-name>/SKILL.md`.
-Skills define when to use them, required inputs/outputs, and the expected workflow.
-
-## How humans should use these skills
-- Choose the skill that best matches the task intent (research, plan, implement, review, etc.).
-- Open the skill’s `SKILL.md` before acting; follow its workflow and rules.
-- Use only the inputs/outputs specified by the skill unless the user requests otherwise.
-- Treat skills as task-scoped guidance: do not apply them across unrelated tasks.
-- If multiple skills apply, use the minimal set and state the order.
-
 ## Skills list
 
 - a11y-review — Accessibility review of UI changes using WCAG-oriented heuristics.
@@ -31,11 +20,3 @@ Skills define when to use them, required inputs/outputs, and the expected workfl
 - test-planner — Build a behavior-focused, risk-based full-stack test strategy.
 - ui-designer — Audit existing UI and propose implementation-ready UX/UI improvements.
 
-## System skills
-
-- skill-creator — Create or update skills that extend Codex with specialized workflows.
-- skill-installer — Install skills from curated lists or GitHub repositories.
-
-## Notes
-- Skills are designed to be durable guidance. If a skill’s intent changes, update its `SKILL.md` and any referenced templates.
-- Some skills read/write files in `.ace/` or `docs/specs/`. Follow each skill’s Input/Output rules.
