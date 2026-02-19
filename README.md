@@ -1,6 +1,7 @@
 # Skills README
 
-This repository contains Codex skills. Each skill is a focused playbook stored in `/<skill-name>/SKILL.md`.
+This repository contains Codex skills. Most skills are focused playbooks stored in `/<skill-name>/SKILL.md`.
+System-provided skills are stored under `/.system/<skill-name>/SKILL.md`.
 Skills define when to use them, required inputs/outputs, and the expected workflow.
 
 ## How humans should use these skills
@@ -27,6 +28,13 @@ Skills define when to use them, required inputs/outputs, and the expected workfl
 - spec-linter — Lint feature specs for completeness, focus, and index alignment.
 - style-enforcer — Enforce repository coding style and conventions.
 - task-planner — Help design or refine a task definition (e.g., `.ace/TASK.md`).
+- test-planner — Build a behavior-focused, risk-based full-stack test strategy.
+- ui-designer — Audit existing UI and propose implementation-ready UX/UI improvements.
+
+## System skills
+
+- skill-creator — Create or update skills that extend Codex with specialized workflows.
+- skill-installer — Install skills from curated lists or GitHub repositories.
 
 ## Notes
 - Skills are designed to be durable guidance. If a skill’s intent changes, update its `SKILL.md` and any referenced templates.
