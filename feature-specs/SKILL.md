@@ -55,15 +55,29 @@ Functional requirements describe what the system must do (capabilities/behaviors
 Include user stories/scenarios when they help capture expected behavior from the user’s point of view; omit them for purely internal capabilities.
 Frontmatter `implemented_version` should reflect the latest spec revision date that is actually implemented in the system. If not yet implemented, leave it as `YYYY-MM-DD` or set to `N/A`.
 
-### 4) Update the index
+### 4) Update the index (discoverability-first)
 
-Load `references/index-template.md`. Add or update the row for the feature with:
+Load `references/index-template.md`. Treat `docs/specs/_index.md` as a routing layer that helps agents decide whether to read a long spec.
+
+Add or update the row for the feature with:
 
 - Feature name (matches file name)
 - Status (Draft, In Review, Approved, Deprecated)
 - Owner
 - Last updated (YYYY-MM-DD)
-- One‑sentence summary
+- Problem (1 sentence): what pain/opportunity this spec addresses
+- In scope (1 sentence): highest-value behaviors included
+- Out of scope (1 sentence): explicit exclusions to prevent context overreach
+- Keywords: 4-8 stable search terms (nouns/phrases, comma-separated)
+- Read if...: 1 sentence describing when an agent should include this spec in context
+- Summary (1 sentence): concise overall description
+
+Index writing constraints:
+
+- Keep each cell short and scannable; avoid multi-sentence cells except `Read if...`.
+- Prefer stable terminology over project slang so search/retrieval is reliable.
+- Update index metadata whenever the spec meaning changes, not only when the date changes.
+- If uncertain between two labels/tags, choose the one future readers are more likely to search.
 
 ### 5) Update the change log (required)
 
@@ -84,6 +98,7 @@ If the file is new, create the change log and add an initial entry like:
 
 - Produce the spec file in `docs/specs/<feature-name>.md`.
 - Update `docs/specs/_index.md`.
+- Ensure `_index.md` is useful for pre-read triage of long specs.
 - Keep writing direct, structured, and scannable.
 
 ## References

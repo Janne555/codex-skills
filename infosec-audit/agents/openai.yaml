@@ -1,6 +1,6 @@
 interface:
   display_name: "Infosec Audit"
   short_description: "Adversarial security review and risks"
-  icon_small: "./assets/icon.svg"
-  icon_large: "./assets/icon.svg"
+  icon_small: "./assets/icon.png"
+  icon_large: "./assets/icon.png"
   default_prompt: "Use $infosec-audit to perform a security audit."

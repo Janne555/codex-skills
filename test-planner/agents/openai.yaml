@@ -1,0 +1,4 @@
+interface:
+  display_name: "Test Planner"
+  short_description: "Plan risk-based unit/integration/e2e suites"
+  default_prompt: "Use $test-planner to derive a test suite from specs and user stories."
