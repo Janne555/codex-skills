@@ -85,13 +85,18 @@ At the bottom of the spec, ensure a **Change log** section exists. Append a new 
 
 `YYYY-MM-DD — Author — Summary of changes — Rationale`
 
+Change-log deduplication rule:
+
+- Keep exactly one change-log line per calendar date.
+- If multiple edits happen on the same date, update that date’s existing line by summarizing all same-day changes into that single line (do not add a second line for the same date).
+
 If the file is new, create the change log and add an initial entry like:
 `YYYY-MM-DD — Author — Initial draft — Created`
 
 ## Editing Rules
 
 - Overwrite the main spec content with the new version.
-- Preserve the **Change log** section and append a new entry.
+- Preserve the **Change log** section and add exactly one entry per date (append for new dates, update the existing line for same-day edits).
 - If content conflicts with prior versions, resolve in the main body and document the decision in the change log.
 
 ## Output Expectations
