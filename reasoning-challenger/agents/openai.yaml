@@ -1,0 +1,4 @@
+interface:
+  display_name: "Reasoning Challenger"
+  short_description: "Stress-test ideas with constructive challenge"
+  default_prompt: "Challenge my reasoning and decisions with evidence and alternatives."
