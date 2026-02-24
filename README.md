@@ -18,5 +18,5 @@
 - style-enforcer — Enforce repository coding style and conventions.
 - task-planner — Help design or refine a task definition (e.g., `.ace/TASK.md`).
 - test-planner — Build a behavior-focused, risk-based full-stack test strategy.
+- uncle-bob — Find maintainability/code-design smells and propose safe refactors.
 - ui-designer — Audit existing UI and propose implementation-ready UX/UI improvements.
-
