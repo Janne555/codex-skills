@@ -53,12 +53,14 @@ Artifact location: write all outputs to `.ace/` and only update relevant section
 ## Output format
 Produce `.ace/research.md` with:
 1. **Summary**: 2–4 sentences on the problem and relevant code areas.
-2. **Relevant Files and Responsibilities**: bullet list of paths with one-line descriptions.
-3. **Current Behavior**: step-by-step description of current behavior for this case.
-4. **Candidate Change Points**: bullets of files/functions to modify and why.
-5. **Constraints and Risks**: bullets of compat/perf/coupling considerations.
-6. **Invariants (if mined)**: key invariants with sources and confidence.
-7. **Open Questions**: questions for the team before implementing.
+2. **Open Questions**: questions for the team before implementing.
+3. **Top Concerns for Human**: 2-4 sentences about the impacts of the task that the human operator should understand.
+4. **Relevant Files and Responsibilities**: bullet list of paths with one-line descriptions.
+5. **Current Behavior**: step-by-step description of current behavior for this case.
+6. **Candidate Change Points**: bullets of files/functions to modify and why.
+7. **Constraints and Risks**: bullets of compat/perf/coupling considerations.
+8. **Invariants (if mined)**: key invariants with sources and confidence.
+9. **Open Questions**: questions for the team before implementing.
 
 ## External-docs rule
 1) Create or update `.ace/doc_scout_questions.md` with a numbered list of questions.
