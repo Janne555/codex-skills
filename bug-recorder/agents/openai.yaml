@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bug Recorder"
+  short_description: "Capture actionable bug reports one at a time"
+  default_prompt: "Use $bug-recorder to collect bug reports and record them in the format I choose."

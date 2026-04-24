@@ -4,6 +4,7 @@
 
 - a11y-review — Accessibility review of UI changes using WCAG-oriented heuristics.
 - ace — End-to-end coordinator across research, planning, and implementation.
+- bug-recorder — Record bug reports through an actionable intake workflow.
 - doc-scout — Research official documentation and produce a source-backed answer pack.
 - feature-specs — Create/update durable feature specs that describe desired system state.
 - implement-change — Implement a pre-approved plan with focused edits and tests.
