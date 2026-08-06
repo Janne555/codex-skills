@@ -1,0 +1,4 @@
+interface:
+  display_name: "Write Code Comments"
+  short_description: "Decide when and how to comment code"
+  default_prompt: "Use $write-code-comments to decide which code comments this change needs and write only those comments."
